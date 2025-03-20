@@ -13,6 +13,8 @@ ENV LANG=C.UTF-8
 
 # Встановлюємо робочу директорію
 WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Копіюємо файли бота в контейнер
 COPY . .
@@ -22,3 +24,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Запускаємо бота
 CMD ["python", "main.py"]
+
