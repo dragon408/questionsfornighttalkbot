@@ -1,0 +1,4 @@
+pyTelegramBotAPI
+pytesseract
+python-dotenv
+emoji~=1.6.3
